@@ -61,14 +61,27 @@ let myNav = document.querySelector("nav");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     myNav.style.visibility = "visible";
   } else {
     myNav.style.visibility = "hidden";
   }
+
+  checkLocation();
 }
 
+function checkLocation() {
+    let lHash = window.location.hash;
+    lHash = lHash.split('#')[1];
 
+    //remove active class from all nav-link
+    let allNavLinks = document.querySelectorAll(".nav-link");
+    for(let i = 0; i < allNavLinks.length; i++) {
+        allNavLinks[i].classList.remove('active');
+    }
+
+    document.querySelector('.' + lHash + "-nav").classList.add('active');
+}
 
 
 
@@ -81,52 +94,52 @@ let projects = [
         "description": "In my excel clone, I have implemented just some of the functions of real excel. Used Graph data structure.",
         "github": "https://github.com/candy-6646/Google-Sheets-Clone",
         "link": "https://candy-6646.github.io/excel-clone",
-        "tech": ["Created a <b>cross platform</b> spreadsheet application.", "<b>Graph</b> Data Structure to implement excel formula.", "<b>JavaScript</b> is used for adding functionalities to app.", "Using <b>Chrome local-storage</b> to store data of sheet."]
+        "tech": ["Created a <b>cross platform</b> spreadsheet application.", "<b>Graph</b> Data Structure to implement excel formula.", "Each cell of excel clone can be connected to any other cell.", "Using <b>Chrome local-storage</b> to store data of sheet."]
     },
     {
         "id" : 1,
         "name": "Camera App",
         "icon": "fa-camera",
         "description": "This project is a browser object model (BOM) having following features: Apply filters, Zoom in and Zoom out, etc.",
-        "github": "",
-        "link": "",
-        "tech": ["Creted UI using <b>HTML</b>, <b>CSS</b> and <b>Bootstrap</b>.", "Provided functionality to app using <b>JavaScript</b>.", "To store images and videos, I have used <b>IndexedDB</b>.", " Images have been captured with the help of <b>Canvas</b>."]
+        "github": "https://github.com/candy-6646/Camera-Web",
+        "link": "https://candy-6646.github.io/cameraApp",
+        "tech": ["Images have been captured with the help of <b>Canvas</b>.", "Added basic features of camera like- Zoom-in, Zoom-out, Filters, Timer, etc.", "To store images and videos, I have used <b>IndexedDB</b>."]
     },
     {
         "id" : 2,
         "name": "Simon Game",
         "icon": "fa-gamepad",
-        "description": "Simon game is a game of memory skill. Used JavaScript to add functionalities and animations in my game",
-        "github": "",
-        "link": "",
-        "tech": ["Built a web-based game using <b>JavaScript</b>.", "Used <b>CSS</b> and <b>JS</b> to add gaming animations.", "UI is created using <b>HTML</b> and <b>CSS</b>."]
+        "description": "Simon game is a game of memory skill. Used JavaScript to add functionalities and animations in my game.",
+        "github": "https://github.com/candy-6646/Simon-Game",
+        "link": "https://candy-6646.github.io/simon_game",
+        "tech": ["Built a web-based game using <b>JavaScript</b>.", "UI is created using <b>HTML</b> and <b>CSS</b>.", "Maked game interactive by adding animations using <b>Jquery</b>."]
     },
     {
         "id" : 3,
         "name": "Forms App",
         "icon": "fa-server",
         "description": "In this project, I have tried to clone Google Forms. Basically, it is used to collect data, create surveys, etc.",
-        "github": "",
-        "link": "",
-        "tech": ["Developed a clone of <b>Google Forms</b>.", "Backend is developed in <b>Nodejs</b>.", "To create user sessions <b>Expressjs</b> is used.", "<b>MongoDB</b> is used to store forms related data."]
+        "github": "https://github.com/candy-6646/Forms-App",
+        "link": "https://forms-app-candy.herokuapp.com/",
+        "tech": ["Developed a clone of <b>Google Forms</b>.", "<b>Realtime data collection</b> can be done.", "User can login either by <b>Oauth</b> or <b>credentials<b/>.", "Created <b>schemas</b> for objects using <b>MongoDB</b>."]
     },
     {
         "id" : 4,
         "name": "Notes App",
         "icon": "fa-edit",
         "description": "Notes App is generally used to create notes, added some more functionalities like, sharing and collaboration.",
-        "github": "",
-        "link": "",
+        "github": "https://github.com/candy-6646/Notes-App",
+        "link": "https://notes-app-candy.herokuapp.com/",
         "tech": ["Tried to clone <b>Google Keep</b> app.", " Used <b>Nodejs</b> to develop backend of website.", "<b>Expressjs</b> used to create dynamic routes for users.", "Provided logins using <b>OAuth</b> as well as credentials."]
     },
     {
         "id" : 5,
-        "name": "Covid Tracker",
-        "icon": "fa-medkit",
-        "description": "Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem lorem lorem est amet labore eirmod erat clita.",
-        "github": "",
-        "link": "",
-        "tech": ["Used <b>HTML</b>, CSS and BOOTSTRAP to develop UI.", " Used NODEJS to develop backend of website.", "Used express library to create dynamic routes for users."]
+        "name": "Musica",
+        "icon": "fa-music",
+        "description": "Musica is an online tool that helps to extract different muical componets like- Base, BGM, Guitar, voice etc.",
+        "github": "https://github.com/candy-6646/Musica",
+        "link": "https://github.com/candy-6646/Musica",
+        "tech": ["Musica is a online music extractor app.", " Making use of <b>Deezer/Spleeter</b> library.", "Model provides three diffrent types of music extraction options."]
     }
 ]
 

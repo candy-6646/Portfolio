@@ -734,7 +734,7 @@ nav {
 }
 
 .footer-card a:hover {
-    color: #ADD8E6;
+    color: #AFB4FF;
 }
 
 .footer-links {
@@ -779,4 +779,32 @@ nav {
 
 .Copyright-text {
     color: #fff;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .section-heading > h1 {
+        font-size: 2rem !important;
+    }
+
+    .about-right > h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .quality-left > h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .quality-right > h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .cursive-text {
+        font-size: 1.5rem !important;
+    }
 }
