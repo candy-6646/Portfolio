@@ -1,5 +1,15 @@
-//typewitter
+// Aos fade effects
+// Init AOS
+function aos_init() {
+    AOS.init({
+      duration: 1500,
+      easing: "ease-in-out-back",
+      once: true
+    });
+  }
 
+
+//typewitter
 var app = document.getElementById('app');
 
 var typewriter = new Typewriter(app, {
@@ -7,6 +17,13 @@ var typewriter = new Typewriter(app, {
     autoStart: true,
     loop:true
 });
+
+let scrollTopBtn = document.querySelector(".scroll-to-top-btn");
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  
 
 
 let allSkillCards = document.querySelectorAll(".skill-card");
@@ -63,8 +80,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     myNav.style.visibility = "visible";
+    scrollTopBtn.style.visibility = 'visible';
   } else {
     myNav.style.visibility = "hidden";
+    scrollTopBtn.style.visibility = 'hidden';
   }
 
   checkLocation();
@@ -155,7 +174,7 @@ for(let i = 1; i <= 2; i++) {
         projectCard.classList.add('col-lg-4');
         projectCard.classList.add('col-sm-12');
 
-        projectCard.innerHTML = `<div class="project-card">
+        projectCard.innerHTML = `<div class="project-card" data-aos="fade-up">
         <div class="project-title">
           <div class="project-img">
             <i class="fa ${projects[projectCount].icon}"></i>
