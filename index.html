@@ -85,11 +85,11 @@
     <div class="home-container">
       <div class="home-content">
         <h3 class="text-white font-weight-normal mb-3"  data-aos="fade-up">I'm</h3>
-        <h1 class="text-uppercase mb-2"  data-aos="fade-up">Kundan Kumar</h1>
-        <div class="typeWritter mb-3"  data-aos="fade-up">
+        <h1 class="text-uppercase mb-2"  data-aos="fade-up" data-aos-duration="1500">Kundan Kumar</h1>
+        <div class="typeWritter mb-3"  data-aos="fade-up" data-aos-duration="2000">
           <h2 id="app"></h2>
         </div>
-        <div class="links"  data-aos="fade-up">
+        <div class="links"  data-aos="fade-up" data-aos-duration="2500">
           <div class="links-item">
               <a href="https://github.com/candy-6646/"><button class="btn btn-outline-light"><i class="fa fa-github" aria-hidden="true"></i></button></a>
           </div>
@@ -115,10 +115,10 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-5 col-sm-12 about-left" data-aos="fade-right">
+        <div class="col-lg-5 col-sm-12 about-left" data-aos="fade-up">
           <div class="about-img"></div>
         </div>
-        <div class="col-lg-7 col-sm-12 about-right" data-aos="fade-left">
+        <div class="col-lg-7 col-sm-12 about-right" data-aos="fade-down">
           <h3 class="mb-4" style="color: #ff512f;">Software Engineer & Web Developer</h3>
           <p class="mb-3">A responsible and highly adaptable individual with a knack of coding and problem-solving. Hands-on experience in Frontend and Backend Development.Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions.</p>
           <div class="details mb-3">
@@ -158,23 +158,23 @@
         <div class="skill-filter-item" id="course">Coursework</div>
       </div>
 
-      <div class="my-container">
-        <div class="skill-card s1 f" data-aos="fade-up"></div>
-        <div class="skill-card s2 f" data-aos="fade-up"></div>
-        <div class="skill-card s3 f" data-aos="fade-up"></div>
-        <div class="skill-card s4 f" data-aos="fade-up"></div>
-        <div class="skill-card s6 b" data-aos="fade-up"></div>
-        <div class="skill-card s7 b" data-aos="fade-up"></div>
-        <div class="skill-card s8 b" data-aos="fade-up"></div>
-        <div class="skill-card s9 b" data-aos="fade-up"></div>
-        <div class="skill-card s5 b" data-aos="fade-up"></div>
-        <div class="skill-card s15 b" data-aos="fade-up"></div>
-        <div class="skill-card s11 c" data-aos="fade-up"></div>
-        <div class="skill-card s10 c" data-aos="fade-up"></div>
-        <div class="skill-card s12 c" data-aos="fade-up"></div>
-        <div class="skill-card s13 c" data-aos="fade-up"></div>
-        <div class="skill-card s14 c" data-aos="fade-up"></div>
-        <div class="skill-card s16 c" data-aos="fade-up"></div>
+      <div class="my-container" data-aos="fade-up">
+        <div class="skill-card s1 f"></div>
+        <div class="skill-card s2 f"></div>
+        <div class="skill-card s3 f"></div>
+        <div class="skill-card s4 f"></div>
+        <div class="skill-card s6 b"></div>
+        <div class="skill-card s7 b"></div>
+        <div class="skill-card s8 b"></div>
+        <div class="skill-card s9 b"></div>
+        <div class="skill-card s5 b"></div>
+        <div class="skill-card s15 b"></div>
+        <div class="skill-card s11 c"></div>
+        <div class="skill-card s10 c"></div>
+        <div class="skill-card s12 c"></div>
+        <div class="skill-card s13 c"></div>
+        <div class="skill-card s14 c"></div>
+        <div class="skill-card s16 c"></div>
       </div>
     </div>
   </section>
@@ -190,7 +190,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-sm-12 quality-left" data-aos="fade-right">
+        <div class="col-lg-6 col-sm-12 quality-left" data-aos="fade-up">
           <h3>My Education</h3>
           <div class="details">
             <div class="lines">
@@ -204,7 +204,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-12 quality-right" data-aos="fade-left">
+        <div class="col-lg-6 col-sm-12 quality-right" data-aos="fade-down">
           <h3>My Expericence</h3>
           <div class="details">
             <div class="lines">
@@ -269,19 +269,22 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-sm-12" data-aos="fade-up">
-          <div class="cont-info">
-            <input type="text" class="form-control" placeholder="Your Name" />
-            <input type="email" class="form-control" id="floatingInput" placeholder="Your Email" />
-          </div>
-          <div class="cont-info cont-info-2">
-            <input type="text" class="form-control" placeholder="Subject" />
-          </div>
-          <div class="cont-info-3">
-            <textarea class="form-control" placeholder="Message" id="floatingTextarea"></textarea>
-          </div>
-          <div class="cont-info-4">
-            <button class="btn btn-outline">Send Message</button>
-          </div>
+          <form action="https://formsubmit.co/candyboy6646@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://candy-6646.github.io/portfolio/thanks.html">
+            <div class="cont-info">
+              <input type="text" class="form-control" placeholder="Your Name" name="Name" required="true" />
+              <input type="email" class="form-control" name="Email"placeholder="Your Email" required="true" />
+            </div>
+            <div class="cont-info cont-info-2">
+              <input type="text" class="form-control" name="Subject" placeholder="Subject" required="true" />
+            </div>
+            <div class="cont-info-3">
+              <textarea class="form-control" placeholder="Message" name="Message" required="true"></textarea>
+            </div>
+            <div class="cont-info-4">
+              <button class="btn btn-outline" type="submit">Send Message</button>
+            </div>
+            </form>
         </div>
       </div>
     </div>
@@ -305,7 +308,7 @@
           <a href="#projects">My Work</a> | 
           <a href="#contact">Contact Me</a>  
         </div>
-        <div class="Copyright-text">© Copyright 2021 Kundan Kumar</div>
+        <div class="Copyright-text">© Copyright 2022 Kundan Kumar</div>
       </div>
     </div>
   </div>

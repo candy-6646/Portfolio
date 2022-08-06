@@ -20,8 +20,7 @@ var typewriter = new Typewriter(app, {
 
 let scrollTopBtn = document.querySelector(".scroll-to-top-btn");
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    window.scrollTo({top: 0, behavior: 'smooth'});
 }
   
 
@@ -78,7 +77,7 @@ let myNav = document.querySelector("nav");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
     myNav.style.visibility = "visible";
     scrollTopBtn.style.visibility = 'visible';
   } else {
@@ -86,21 +85,39 @@ function scrollFunction() {
     scrollTopBtn.style.visibility = 'hidden';
   }
 
-  checkLocation();
+
 }
 
-function checkLocation() {
-    let lHash = window.location.hash;
-    lHash = lHash.split('#')[1];
+// Get all sections that have an ID defined
+const sections = document.querySelectorAll("section");
 
-    //remove active class from all nav-link
-    let allNavLinks = document.querySelectorAll(".nav-link");
-    for(let i = 0; i < allNavLinks.length; i++) {
-        allNavLinks[i].classList.remove('active');
+// Add an event listener listening for scroll
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  
+  // Get current scroll position
+  let scrollY = window.pageYOffset;
+  
+  // Now we loop through sections to get height, top and ID values for each
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+  
+   
+    const sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 50;
+    let sectionId = current.getAttribute("id");
+    
+    if (
+      scrollY > sectionTop &&
+      scrollY <= sectionTop + sectionHeight
+    ){
+      document.querySelector("." + sectionId + "-nav").classList.add("active");
+    } else {
+      document.querySelector("." + sectionId + "-nav").classList.remove("active");
     }
-
-    document.querySelector('.' + lHash + "-nav").classList.add('active');
+  });
 }
+
 
 
 
