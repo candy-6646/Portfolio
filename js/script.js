@@ -128,26 +128,26 @@ let projects = [
         "name": "Excel Clone",
         "icon": "fa-file",
         "description": "In my excel clone, I have implemented just some of the functions of real excel. Used Graph data structure.",
-        "github": "https://github.com/candy-6646/Google-Sheets-Clone",
-        "link": "https://candy-6646.github.io/excel-clone",
-        "tech": ["Created a <b>cross platform</b> spreadsheet application.", "<b>Graph</b> Data Structure to implement excel formula.", "Each cell of excel clone can be connected to any other cell.", "Using <b>Chrome local-storage</b> to store data of sheet."]
+        "github": "https://github.com/candy-6646/Excel_Clone",
+        "link": "https://candy-6646.github.io/Excel_Clone/",
+        "tech": ["Created a <b>cross platform</b> spreadsheet application.", "<b>Graph</b> Data Structure to implement excel formula.", "Using <b>Chrome local-storage</b> to store data of sheet."]
     },
     {
         "id" : 1,
         "name": "Camera App",
         "icon": "fa-camera",
         "description": "This project is a browser object model (BOM) having following features: Apply filters, Zoom in and Zoom out, etc.",
-        "github": "https://github.com/candy-6646/Camera-Web",
-        "link": "https://candy-6646.github.io/cameraApp",
-        "tech": ["Images have been captured with the help of <b>Canvas</b>.", "Added basic features of camera like- Zoom-in, Zoom-out, Filters, Timer, etc.", "To store images and videos, I have used <b>IndexedDB</b>."]
+        "github": "https://github.com/candy-6646/Camera",
+        "link": "https://candy-6646.github.io/Camera/",
+        "tech": ["Images have been captured with the help of <b>Canvas</b>.", "Added basic features of camera like- Zoom-in, Zoom-out, Filters, Timer, etc.", "To store images and videos, used <b>IndexedDB</b>."]
     },
     {
         "id" : 2,
         "name": "Simon Game",
         "icon": "fa-gamepad",
         "description": "Simon game is a game of memory skill. Used JavaScript to add functionalities and animations in my game.",
-        "github": "https://github.com/candy-6646/Simon-Game",
-        "link": "https://candy-6646.github.io/simon_game",
+        "github": "https://github.com/candy-6646/Simon_Game",
+        "link": "https://candy-6646.github.io/Simon_Game/",
         "tech": ["Built a web-based game using <b>JavaScript</b>.", "UI is created using <b>HTML</b> and <b>CSS</b>.", "Maked game interactive by adding animations using <b>Jquery</b>."]
     },
     {
