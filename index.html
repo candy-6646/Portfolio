@@ -110,7 +110,7 @@
   
 
   <section id="about">
-    <div class="section-heading mb-4">
+    <div class="section-heading">
       <h1 class="text-uppercase">About Me</h1>
     </div>
     <div class="container">
@@ -119,19 +119,15 @@
           <div class="about-img"></div>
         </div>
         <div class="col-lg-7 col-sm-12 about-right" data-aos="fade-down">
-          <h3 class="mb-4" style="color: #ff512f;">Software Engineer & Web Developer</h3>
+          <h2 class="mb-2 mt-2">Software Engineer</h2>
           <p class="mb-3">A responsible and highly adaptable individual with a knack of coding and problem-solving. Hands-on experience in Frontend and Backend Development.Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions.</p>
           <div class="details mb-3">
-            <div class="details-item">
-              <h6>Name: <span class="text-secondary">Kundan Kumar</span></h6>
-              <h6>Degree: <span class="text-secondary">B.Tech</span></h6>
-              <h6>Phone: <span class="text-secondary">+91 7065927624</span></h6>
-            </div>
-            <div class="details-item">
-              <h6>Birthday: <span class="text-secondary">2 August 2000</span></h6>
-              <h6>Experience: <span class="text-secondary">1 Year +</span></h6>
-              <h6>Email: <span class="text-secondary">kundan.66461@gmail.com</span></h6>
-            </div>
+            <h6>Name: <span class="text-secondary-m">Kundan Kumar</span></h6>
+            <h6>Degree: <span class="text-secondary-m">B.Tech</span></h6>
+            <h6>Phone: <span class="text-secondary-m">+91 7065927624</span></h6>
+            <h6>Birthday: <span class="text-secondary-m">2 August 2000</span></h6>
+            <h6>Experience: <span class="text-secondary-m">1 Year +</span></h6>
+            <h6>Email: <span class="text-secondary-m">kundan.66461@gmail.com</span></h6>
           </div>
           <div class="abt-btn">
             <a href="https://www.linkedin.com/in/kundan-kumar-65a4b9176/" class="btn custom-btn">Hire Me</a>
@@ -146,7 +142,7 @@
   
 
   <section id="skills">
-    <div class="section-heading mb-4">
+    <div class="section-heading">
       <h1 class="text-uppercase">My Skills</h1>
     </div>
 
@@ -176,6 +172,7 @@
         <div class="skill-card s14 c"></div>
         <div class="skill-card s16 c"></div>
         <div class="skill-card s17 f"></div>
+        <div class="skill-card s18 b"></div>
       </div>
     </div>
   </section>
@@ -185,28 +182,28 @@
 
 
   <section id="quality">
-    <div class="section-heading mb-4">
+    <div class="section-heading">
       <h1 class="text-uppercase">Qualification</h1>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-sm-12 quality-left" data-aos="fade-up">
-          <h3>My Education</h3>
+          <h2>My Education</h2>
           <div class="details">
             <div class="lines">
               <div class="cir"><i class="fa fa-graduation-cap"></i></div>
               <div class="line"></div>
             </div>
             <div class="exp-card">
-              <span class="exp-title mb-2">B.Tech In CSE</span>
+              <span class="exp-title mb-2">B.Tech In Computer Science</span>
               <span class="exp-duration mb-1">NIET | <span class="exp-light">2018 - 2022</span></span>
               <span class="exp-desc">With the high demand of computer science and technology in the industry, I have spent my four years at NIET to enhance my software development skills. Learnt different important computer science concepts to be a better developer.</span>
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-sm-12 quality-right" data-aos="fade-down">
-          <h3>My Expericence</h3>
+          <h2>My Expericence</h2>
           <div class="details">
             <div class="lines">
               <div class="cir"><i class="fa fa-briefcase"></i></div>
@@ -227,7 +224,7 @@
   
 
   <section id="projects">
-    <div class="section-heading mb-4">
+    <div class="section-heading">
       <h1 class="text-uppercase">Projects</h1>
     </div>
 
@@ -245,7 +242,7 @@
           <div class="delete-modal-icon mb-2"><i class="fa"></i></div>
           <div class="delete-modal-title">Project Name</div>
         </div>
-        <div class="modal-body mb-3">
+        <div class="modal-body mb-3" style="overflow-y: scroll;">
           <div class="delete-note-text">
             <ul>
             </ul>
@@ -263,7 +260,7 @@
 
 
   <section id="contact">
-    <div class="section-heading mb-4">
+    <div class="section-heading">
       <h1 class="text-uppercase">Contact Me</h1>
     </div>
 
@@ -309,11 +306,15 @@
           <a href="#projects">My Work</a> | 
           <a href="#contact">Contact Me</a>  
         </div>
-        <div class="Copyright-text">© Copyright 2022 Kundan Kumar</div>
+        <div class="Copyright-text" id="copyr-text"></div>
       </div>
     </div>
   </div>
   
+  <script>
+    let year = new Date().getFullYear();
+    document.getElementById("copyr-text").innerText = "© Copyright " + year + " Kundan Kumar";
+  </script>
 
   <script type="text/javascript" src="js/script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

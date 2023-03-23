@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	scroll-behavior: smooth;
-    background-color: #ffffff;
+    background-color: #434242;
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-    background: linear-gradient(to bottom, #ff512f, #dd2476);
+    background: #000;
     font-family: 'Amaranth', sans-serif;
     font-size: 18px;
     width: 100%;
@@ -35,20 +35,20 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ff512f;
+    border: 1px solid #fff;
     border-radius: 100px;
     animation: smoothbounceball 0.7s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     cursor: pointer;
-    color: #ff512f;
+    color: #fff;
     font-size: 1.5rem;
     visibility: hidden;
 }
 
 .scroll-to-top-btn:hover {
-    background-color: #ff512f;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 
@@ -59,7 +59,7 @@ nav {
 #home {
     min-height: 100vh;
     overflow: hidden;
-    background: linear-gradient(to bottom, #ff512f, #dd2476);
+    background: black;
     position: relative;
     z-index: 50;
 }
@@ -87,12 +87,12 @@ nav {
 .home-content > h1 {
     -webkit-text-stroke: 2px #ffffff;
     color: transparent;
-    font-size: 6vw !important;
+    font-size: 7vw !important;
 }
 
 #app {
     color: #ffffff;
-    font-size: 3.5vw;
+    font-size: 4vw;
     font-family: 'Amaranth', sans-serif;
 }
 
@@ -112,7 +112,7 @@ nav {
 }
 
 .home-content .links > div button:hover {
-    color: #ff512f;
+    color: #000;
 }
 
 .down-btn {
@@ -232,6 +232,8 @@ nav {
     min-height: 100vh;
     padding: 100px 10px;
     z-index: 50;
+    background-color: #343a40;
+    color: #fff;
 }
 
 .section-heading {
@@ -239,12 +241,13 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 .section-heading > h1 {
-    -webkit-text-stroke: 1px #ff512f;
+    -webkit-text-stroke: 1px #fff;
     color: transparent;
-    font-size: 6vw !important;
+    font-size: 9vw !important;
     font-family: "Roboto", sans-serif;
 }
 
@@ -255,8 +258,9 @@ nav {
 
 .row > div {
     display: flex;
-    height: 25rem;
+    height: auto;
     font-family: "Roboto", sans-serif;
+    margin-top: 1rem;
 }
 
 .about-left {
@@ -285,17 +289,18 @@ nav {
 
 .details {
     width: 100%;
-    height: 8rem;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.details .details-item {
-    margin-right: auto;
-}
 
 .details h6 {
-    color: #343a40;
-    margin-bottom: 25px;
+    margin: 0 20px 20px 0;
+}
+
+.text-secondary-m {
+    opacity: 0.6;
 }
 
 .abt-btn {
@@ -304,18 +309,20 @@ nav {
 
 .custom-btn {
     margin-right: 10px;
-    color: #ff512f !important;
-    border-color: #ff512f !important;
+    color: #fff !important;
+    border-color: #fff !important;
     border-radius: 100px !important;
 }
 
 .custom-btn:hover {
-    background-color: #ff512f !important;
-    color: #fff !important;
+    background-color: #fff !important;
+    color: #000 !important;
 }
 
 @media (max-width: 768px) {
-    
+    .details {
+        height: auto;
+    }
 }
 
 
@@ -329,6 +336,7 @@ nav {
     min-height: 100vh;
     padding: 100px 10px;
     z-index: 50; 
+    background-color: #343a40;
 }
 
 #skills .container {
@@ -347,30 +355,33 @@ nav {
     height: 4rem;
     display: flex;
     justify-content: center;
+    overflow-x: auto;
 }
 
 .skill-filter > div {
-    width: 6rem;
+    width: 7rem;
     height: 3rem;
     margin: 0px 10px;
-    background-color: #fff;
-    color: #ff512f;
-    border: 1px solid #ff512f;
+    color: #fff;
+    border: 1px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
     border-radius: 100px;
+    font-weight: bold;
 }
 
 .skill-filter > div:hover {
-    background-color: #ff512f;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     cursor: pointer;
+    border-color: #fff;
 }
 
 .active-skill {
-    background-color: #ff512f !important;
-    color: #fff !important;
+    background-color: #fff !important;
+    color: #000 !important;
 }
 
 .skill-card {
@@ -399,6 +410,8 @@ nav {
     min-height: 100vh;
     padding: 100px 10px;
     z-index: 50;
+    background-color: #343a40;
+    color: #fff;
 } 
 
 #quality .container {
@@ -411,12 +424,7 @@ nav {
 
 .quality-right, .quality-left {
     flex-direction: column;
-    height: 20rem !important;
-}
-
-#quality .row > div > h3 {
-    font-size: 3vw;
-    color: #ff512f;
+    margin-top: 1.5rem !important;
 }
 
 #quality .details {
@@ -443,24 +451,24 @@ nav {
 }
 
 .details .lines .cir {
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
     border-radius: 50%;
-    border: 1px solid #ff512f;
+    border: 1px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .details .lines .cir > i {
-    color: #ff512f;
+    color: #fff;
     font-size: 20px;
 }
 
 .details .lines .line {
     width: 1.5px;
     height: 12rem;
-    background-color: #ff512f;
+    background-color: #fff;
 }
 
 .exp-card .exp-title {
@@ -497,10 +505,14 @@ nav {
     min-height: 100vh;
     padding: 100px 10px;
     z-index: 50;
+    background-color: #343a40;
+    color: #fff;
 }
 
 #projects .container {
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #projects .row {
@@ -516,6 +528,8 @@ nav {
 #projects .project-card {
     width: 90%;
     height: 90%;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .project-card .project-title {
@@ -543,7 +557,7 @@ nav {
 
 .project-card .project-name {
     font-size: 26px;
-    color: gray;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -565,11 +579,11 @@ nav {
 }
 
 .project-links > a {
-    color: #ff512f;
+    color: #fff;
 }
 
 .project-links > a:hover {
-    color: orange;
+    color: gray;
 }
 
 
@@ -600,7 +614,7 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 80px;
-    color: #ff512f;
+    color: #000;
   }
   
   .delete-note-text {
@@ -642,6 +656,8 @@ nav {
     min-height: 100vh;
     padding: 100px 10px;
     z-index: 50;
+    background-color: #343a40;
+    color: #fff;
 }
 
 #contact .container {
@@ -678,9 +694,9 @@ nav {
 .cont-info > input:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #ff512f;
+    border-color: #fff;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem #fed8b1 ;
+    box-shadow: 0 0 0 0.2rem gray ;
 }
 
 .cont-info-2 > input {
@@ -705,9 +721,9 @@ nav {
 .cont-info-3 > textarea:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #ff512f;
+    border-color: #fff;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem #fed8b1 ;
+    box-shadow: 0 0 0 0.2rem gray ;
 }
 
 .cont-info-4 {
@@ -719,14 +735,15 @@ nav {
 
 .cont-info-4 > button {
     border-radius: 100px;
-    color: #ff512f;
-    border-color: #ff512f;
+    color: #fff;
+    border-color: #fff;
     padding: 10px 15px;
 }
 
 .cont-info-4 > button:hover {
-    background-color: #ff512f;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
+    
 }
 
 
@@ -739,7 +756,8 @@ nav {
 .footer {
     width: 100%;
     height: 18rem;
-    background: linear-gradient(to bottom, #ff512f, #dd2476);
+    background: #000;
+    color: #fff;
 }
 
 .footer .container {
@@ -757,10 +775,6 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.footer-card a:hover {
-    color: #AFB4FF;
 }
 
 .footer-links {

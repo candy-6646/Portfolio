@@ -180,34 +180,26 @@ let projects = [
 ]
 
 let projectContainer = document.querySelector("#projects .container");
-let projectCount = 0;
-for(let i = 1; i <= 2; i++) {
-    let rowDiv = document.createElement('div');
-    rowDiv.classList.add('row');
-    projectContainer.appendChild(rowDiv);
+for(let i = 0; i < projects.length; i++) {
+    let projectCard = document.createElement('div');
+    projectCard.classList.add('col-lg-4');
+    projectCard.classList.add('col-sm-12');
 
-    for(let j = 1; j <= 3; j++) {
-        let projectCard = document.createElement('div');
-        projectCard.classList.add('col-lg-4');
-        projectCard.classList.add('col-sm-12');
+    projectCard.innerHTML = `<div class="project-card" data-aos="fade-up">
+    <div class="project-title">
+      <div class="project-img">
+        <i class="fa ${projects[i].icon}"></i>
+      </div>
+      <div class="project-name">${projects[i].name}</div>
+    </div>
+    <div class="project-desc">${projects[i].description}</div>
+    <div class="project-links">
+      <a href="" data-bs-toggle="modal" data-bs-target="#projectModal" id=${i}>Read More</a>
+    </div>
+  </div>`
 
-        projectCard.innerHTML = `<div class="project-card" data-aos="fade-up">
-        <div class="project-title">
-          <div class="project-img">
-            <i class="fa ${projects[projectCount].icon}"></i>
-          </div>
-          <div class="project-name">${projects[projectCount].name}</div>
-        </div>
-        <div class="project-desc">${projects[projectCount].description}</div>
-        <div class="project-links">
-          <a href="" data-bs-toggle="modal" data-bs-target="#projectModal" id=${projectCount}>Read More</a>
-        </div>
-      </div>`
-
-      rowDiv.appendChild(projectCard);
-      applyModalListener(projectCard);
-      projectCount++;
-    }
+  projectContainer.appendChild(projectCard);
+  applyModalListener(projectCard);
 }
 
 function applyModalListener(pCard) {
