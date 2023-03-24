@@ -176,7 +176,34 @@ let projects = [
         "github": "https://github.com/candy-6646/Musica",
         "link": "https://github.com/candy-6646/Musica",
         "tech": ["Musica is a online music extractor app.", " Making use of <b>Deezer/Spleeter</b> library.", "Model provides three diffrent types of music extraction options."]
-    }
+    },
+    {
+      "id" : 6,
+      "name": "Show Maker",
+      "icon": "fa-ticket",
+      "description": "Spring boot backend application where you can book tickets, find shows, search movies/theatres.",
+      "github": "https://github.com/kundan-6646/Show-Maker",
+      "link": "https://github.com/kundan-6646/Show-Maker",
+      "tech": ["<b>Spring boot</b> backend application where you can book tickets.", "find shows, search movies/theatres.", "Developed different <b>API</b> from scratch, using MVC design pattern in Java."]
+   },
+   {
+    "id" : 7,
+    "name": "Snake Game",
+    "icon": "fa-gamepad",
+    "description": "Created popular snake game using Java, added different funtionalities in game live-score, play/pause, levels.",
+    "github": "https://github.com/kundan-6646/Snake-Game",
+    "link": "https://github.com/kundan-6646/Snake-Game",
+    "tech": ["Developed popular snake game with <b>Java</b>, using action listeners to detect different key strokes.", "It has 3 levels from easy to hard with play/pause functionality.", "You can also view your score while playing the game."]
+  },
+  {
+    "id" : 8,
+    "name": "Search-Engine",
+    "icon": "fa-search",
+    "description": "It is a Java-based web application, takes a keyword as input from user and finds the related results.",
+    "github": "https://github.com/kundan-6646/Search-Engine",
+    "link": "https://github.com/kundan-6646/Search-Engine",
+    "tech": ["Created a separate <b>web-crawler</b> which collects data from different websites and stores in DB.", "Rendering user search history by sorting them based on Date/Time.", "<b>MySQL</b> DB is used as database."]
+  }
 ]
 
 let projectContainer = document.querySelector("#projects .container");
