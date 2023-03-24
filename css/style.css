@@ -520,12 +520,12 @@ nav {
     height: 18rem;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 #projects .project-card {
     width: 100%;
     height: 100%;
-    margin: 3rem;
 }
 
 .project-card .project-title {
