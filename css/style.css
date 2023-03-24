@@ -510,25 +510,22 @@ nav {
 
 #projects .container {
     height: auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-#projects .row {
-    height: auto;
-}
-
-#projects .row > div {
+#projects .project-card-cont {
+    width: 22rem;
     height: 18rem;
     justify-content: center;
     align-items: center;
 }
 
 #projects .project-card {
-    width: 90%;
-    height: 90%;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+    margin: 3rem;
 }
 
 .project-card .project-title {

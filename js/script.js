@@ -209,8 +209,7 @@ let projects = [
 let projectContainer = document.querySelector("#projects .container");
 for(let i = 0; i < projects.length; i++) {
     let projectCard = document.createElement('div');
-    projectCard.classList.add('col-lg-4');
-    projectCard.classList.add('col-sm-12');
+    projectCard.classList.add('project-card-cont');
 
     projectCard.innerHTML = `<div class="project-card" data-aos="fade-up">
     <div class="project-title">
