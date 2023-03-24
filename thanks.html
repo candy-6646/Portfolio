@@ -84,13 +84,13 @@
         </div>
         <div class="_footer">
             <a class="btn mb-4" href="https://kundan-6646.github.io/Portfolio/">Back to homepage</a>
-            <p>© Copyright <span id="copyr-text"></span> <a href="https://kundan-6646.github.io/Portfolio/">Kundan Kumar</a></p>
+            <p id="copyr-text"></p>
         </div>
     </div>
 
     <script>
         let year = new Date().getFullYear();
-        document.getElementById("copyr-text").innerText = year;
+        document.getElementById("copyr-text").innerText = "© Copyright " + year + " Kundan Kumar";
     </script>
 </body>
 </html>

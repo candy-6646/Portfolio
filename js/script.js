@@ -197,7 +197,7 @@ let projects = [
   },
   {
     "id" : 8,
-    "name": "Search-Engine",
+    "name": "Search Engine",
     "icon": "fa-search",
     "description": "It is a Java-based web application, takes a keyword as input from user and finds the related results.",
     "github": "https://github.com/kundan-6646/Search-Engine",
